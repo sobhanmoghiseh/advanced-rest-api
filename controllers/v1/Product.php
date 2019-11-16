@@ -214,10 +214,10 @@ class Product extends Route {
 			$product->category_id = $category->id;
 		}
 
-		return $api->response([
+		/*return $api->response([
 			'success' => false,
 			'message' => 'Unable to update product'
-		]);
+		]);*/
 
 		$ok = $product->save();
 		// or product->update()
